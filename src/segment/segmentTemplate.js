@@ -174,7 +174,8 @@ export const segmentsFromTemplate = (attributes, segmentTimeline) => {
       resolvedUri: resolveUrl(attributes.baseUrl || '', uri),
       map: mapSegment,
       number: segment.number,
-      presentationTime
+      presentationTime,
+      time: segment.time
     };
 
     return map;
